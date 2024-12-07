@@ -86,4 +86,41 @@ El **BOOT** es el proceso que realiza el sistema para arrancar.
 4. Luego, selecciona el disco que deseas examinar escribiendo `select disk X` (donde "X" es el número del disco).
 5. Para ver las particiones de ese disco, escribe `list partition`.
 
+## **Reparación del BOOT**
+- Acceder al **Símbolo del sistema** y utilizar los siguientes comandos:
+  - **bootrec /fixmbr:** Corrige el Master Boot Record.
+  - **bootrec /rebuildbcd:** Reconstruye el cargador de arranque.
+  - **bootrec /scanOS:** Escanea los sistemas operativos instalados.
+
+### **Herramientas útiles:**
+- **Medicat Boot Repair Disk**
+- **System Tool**
+- **Boot Repair**
+
+---
+
+## 4. Diagnóstico de Windows**
+
+El diagnóstico del sistema sigue un orden lógico de fallos:
+1. **BIOS/UEFI.**
+2. **BOOT.**
+3. **Windows.**
+
+Para investigar errores como los pantallazos azules, usa herramientas como **BlueScreenView** (Nirsoft) para analizar las causas.
+
+---
+
+## **Reparación de Windows**
+
+Utiliza los siguientes comandos y herramientas para reparar el sistema operativo:
+
+1. **Verificar la salud de los archivos:**
+   - Ejecutar: `sfc /scannow`.
+
+2. **Comprobar el estado del sistema:**
+   - `DISM /online /cleanup-Image /checkHealth`: Verifica la integridad del sistema.
+   - `DISM /online /cleanup-Image /scanHealth`: Realiza una búsqueda más profunda.
+
+3. **Restaurar el sistema operativo:**
+   - `DISM /online /cleanup-Image /restoreHealth`: Repara los componentes dañados.
 
