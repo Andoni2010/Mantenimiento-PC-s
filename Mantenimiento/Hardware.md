@@ -1,4 +1,4 @@
-# Mantenimiento de PC: Hardware y Software
+# Mantenimiento de PC Sobremesa: Hardware
 
 ## Mantenimiento de Hardware
 
