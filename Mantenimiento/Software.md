@@ -187,6 +187,10 @@ El malware es un software diseñado para causar daño, obtener acceso no autoriz
    - Si el problema de red sigue sin resolverse, podrías intentar verificar la configuración del firewall, los puertos y la configuración DNS.
    - También es importante revisar los routers y switches de la red para asegurarse de que no haya fallos en la infraestructura.
    - Si el problema es más grave, podrías requerir la asistencia de un profesional de redes para verificar el hardware de la red.
+---
 
+## Reflexión Final
+
+El mantenimiento integral de hardware y software no solo asegura un mejor rendimiento, sino que también previene problemas a largo plazo, mejorando la estabilidad del sistema. Es fundamental realizar estas tareas de manera regular para asegurar la durabilidad y eficiencia del equipo, garantizando que todos los componentes y el sistema operativo funcionen correctamente y sin interrupciones.
 
 
