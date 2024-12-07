@@ -124,3 +124,6 @@ Utiliza los siguientes comandos y herramientas para reparar el sistema operativo
 3. **Restaurar el sistema operativo:**
    - `DISM /online /cleanup-Image /restoreHealth`: Repara los componentes dañados.
 
+4. **fallo del disco duro:**
+   - `chkdsk C: /F /R`: busca errores y los repara.
+
