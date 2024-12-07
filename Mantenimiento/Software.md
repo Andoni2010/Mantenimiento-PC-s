@@ -108,8 +108,6 @@ El diagnóstico del sistema sigue un orden lógico de fallos:
 
 Para investigar errores como los pantallazos azules, usa herramientas como **BlueScreenView** (Nirsoft) para analizar las causas.
 
----
-
 ## **Reparación de Windows**
 
 Utiliza los siguientes comandos y herramientas para reparar el sistema operativo:
@@ -126,4 +124,69 @@ Utiliza los siguientes comandos y herramientas para reparar el sistema operativo
 
 4. **fallo del disco duro:**
    - `chkdsk C: /F /R`: busca errores y los repara.
+  
+---
+
+## 5. Diagnóstico de Drivers
+
+### **Comprobación de Drivers**  
+- Abrir **Administrador de dispositivos** y verificar si algún dispositivo tiene un signo amarillo de advertencia. Esto indica que hay un problema con el driver o que no está instalado correctamente.
+- Si no encontramos el error directamente, usamos herramientas como **Verifier** (Herramienta de Verificación de Controladores de Windows) para encontrar drivers defectuosos.
+  - **Verifier**: Permite realizar una prueba más exhaustiva de los drivers instalados y encontrar aquellos que no estén funcionando correctamente.
+
+### **Reparación de Drivers**  
+1. **Administrador de dispositivos**:
+   - Desinstalar el dispositivo con problemas y luego reiniciar el sistema para que Windows intente reinstalar los drivers automáticamente.
+2. **Cambio de hardware**:
+   - Si el error persiste después de desinstalar e intentar reinstalar los drivers, podría ser necesario verificar el hardware. Esto incluye asegurarse de que el dispositivo esté correctamente conectado o reemplazar el componente defectuoso.
+3. **Uso de herramientas adicionales**:
+   - **Driver Booster**: Una herramienta útil para escanear y actualizar todos los drivers de manera automática.
+   - **Wagnardsoft (Display Driver Uninstaller)**: Utilizado para desinstalar completamente los drivers gráficos para que no haya conflictos.
+   - Si el problema persiste tras realizar estas acciones, podríamos necesitar contactar al fabricante del hardware para más asistencia o considerar un cambio de hardware.
+  
+---
+
+## 6. Reparación de Malware
+
+### **Definición de Malware**  
+El malware es un software diseñado para causar daño, obtener acceso no autorizado a sistemas, o robar información. Existen varios tipos:
+- **Virus**: Programas que se reproducen y se diseminan a través de sistemas y archivos.
+- **Spyware**: Software que recoge información sobre el usuario sin su consentimiento.
+- **Adware**: Software que muestra anuncios no deseados.
+
+### **Diagnóstico y Reparación**  
+1. **Uso de Ninite**:
+   - Utilizar **Ninite** para actualizar y descargar las aplicaciones necesarias como SuperAntiSpyware y Spybot.
+   - **SuperAntiSpyware**: Herramienta potente para la eliminación de spyware y adware.
+   - **Spybot - Search & Destroy**: Ayuda a detectar y eliminar spyware, malware y otros programas no deseados.
+2. **Uso de Medicat**:
+   - Arrancar **Medicat** y utilizar las herramientas de antivirus y antimalware incluidas en el paquete.
+   - **Malwarebytes**: Realizar un escaneo exhaustivo del sistema para detectar y eliminar posibles amenazas.
+3. **Acción final**:  
+   - Si el sistema está limpio después de la reparación de malware, asegúrate de que el sistema esté completamente actualizado y que el antivirus esté habilitado para protección continua.
+
+---
+
+## 7. Diagnóstico de Redes
+
+### **Comprobación de Red**  
+1. **Ping**:
+   - Realiza un `ping` a la dirección IP del router o del servidor para verificar la conectividad básica.
+   - Ejemplo de comando: `ping 192.168.1.1`.
+   - Si no se recibe respuesta, puede haber un problema de conexión en la red interna.
+2. **Traceroute (tracert)**:
+   - Usa el comando `tracert` para trazar la ruta de la red entre tu equipo y un destino.
+   - Ejemplo de comando: `tracert www.google.com`.
+   - Este comando te permite ver en qué punto de la red está ocurriendo un problema (pérdidas de paquetes, latencia, etc.).
+
+### **Reparación de la Red**  
+1. **Restablecer la conexión**:
+   - Si el ping no tiene éxito, intenta restablecer la conexión de red, deshabilitando y habilitando el adaptador de red desde el Administrador de dispositivos.
+   - Si el problema persiste, revisa los cables, reinicia el router o accede a la configuración de red para restablecer la conexión.
+2. **Comprobaciones avanzadas**:
+   - Si el problema de red sigue sin resolverse, podrías intentar verificar la configuración del firewall, los puertos y la configuración DNS.
+   - También es importante revisar los routers y switches de la red para asegurarse de que no haya fallos en la infraestructura.
+   - Si el problema es más grave, podrías requerir la asistencia de un profesional de redes para verificar el hardware de la red.
+
+
 
