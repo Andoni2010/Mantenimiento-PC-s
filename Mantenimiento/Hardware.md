@@ -26,7 +26,7 @@
 
 ---
 
-## Mantenimiento de Software
+## Mantenimiento de Software Básico 
 
 1. **Creación de un pendrive booteable:**
    - Herramientas: Rufus y una imagen ISO del sistema operativo (Windows recomendado).
