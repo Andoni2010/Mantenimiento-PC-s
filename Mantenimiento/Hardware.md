@@ -1,54 +1,52 @@
-# Mantenimiento de PC Sobremesa: Hardware
+# Mantenimiento de PC: Hardware y Software
 
 ## Mantenimiento de Hardware
 
-1. **Pasta térmica:**
-   - Contiene carbono y, dependiendo de la calidad, su vida útil es de unos 5 años.
-   - **Estrangulamiento térmico:** Ocurre cuando el calor hace que el procesador baje su velocidad.
-   - Cambiar la pasta térmica cada año es recomendable, especialmente en equipos con carcasas cerradas o de cristal.
-   - Al aplicar pasta térmica, asegúrate de no usar demasiada ni muy poca.
+1. **Pasta térmica y control de temperaturas:**
+   - La pasta térmica ayuda a disipar el calor del procesador y debe cambiarse cada 1-3 años según su calidad.
+   - Si el equipo se calienta mucho, verifica que no haya polvo obstruyendo los ventiladores o disipadores.
+   - Usa alcohol isopropílico para retirar la pasta antigua y aplica una capa delgada de pasta nueva.
 
-2. **Limpieza y herramientas recomendadas:**
-   - **Herramientas necesarias:** Destornilladores, pincel, aspiradora antiestática, alcohol isopropílico, pasta térmica de alta calidad.
-   - **Pasos para limpiar:**
-     - Retirar componentes en orden: tarjeta gráfica, RAM, procesador, etc.
-     - Usar pincel y toallitas para limpiar disipadores y ventiladores.
-     - Limpiar la memoria RAM y los filtros de polvo.
+2. **Limpieza de componentes:**
+   - **Ventiladores y disipadores:** Usa un pincel antiestático o aire comprimido.
+   - **Memoria RAM:** Limpia los contactos con un paño suave y alcohol isopropílico.
+   - **Placa base:** Retira el polvo con cuidado usando un pincel pequeño y seco.
+   - **Discos duros y SSD:** Aunque no requieren limpieza directa, asegúrate de que estén bien conectados y sujetos para evitar daños.
 
-3. **Cuidado preventivo:**
-   - Revisar conexiones de cables y evitar tensiones en conectores.
-   - Asegurarse de que los ventiladores no estén obstruidos al ensamblar.
-   - Comprobar que todos los tornillos estén bien ajustados.
+3. **Herramientas recomendadas:**
+   - Destornilladores magnéticos, pinceles antiestáticos, aspiradora de baja potencia y toallitas de alcohol.
+   - **Nota:** Evita usar aspiradoras estándar o productos de limpieza que puedan generar electricidad estática.
 
-4. **Componentes adicionales:**
-   - **Discos duros:** Manejar con cuidado para evitar golpes.
-   - **Fuente de alimentación:** Revisar conexiones y limpiar con aire comprimido ocasionalmente.
+4. **Verificaciones regulares:**
+   - Inspecciona visualmente los conectores y cables. Asegúrate de que no estén desgastados o flojos.
+   - Comprueba los filtros de polvo de la carcasa y límpialos cada 3-6 meses para mantener el flujo de aire.
 
 ---
 
-## Mantenimiento de Software Básico 
+## Mantenimiento de Software
 
 1. **Creación de un pendrive booteable:**
-   - Herramientas: Rufus y una imagen ISO del sistema operativo (Windows recomendado).
-   - Configuración de Rufus: GPT, UEFI, FAT32.
-   - Usar aplicaciones como Ninite para instalar programas básicos rápidamente.
+   - Descarga *Rufus* y una imagen ISO del sistema operativo que necesites.
+   - Configuración estándar: GPT, UEFI, FAT32 (para PCs modernos). Cambia a MBR si el equipo usa BIOS antiguo.
+   - Inserta el pendrive, selecciona la ISO en *Rufus*, configura los parámetros y haz clic en "Iniciar".
 
 2. **Optimización del sistema:**
-   - Usar el comando `sfc /scannow` para reparar archivos del sistema.
-   - Ejecutar `chkdsk /f /r` para verificar la integridad del disco duro.
-   - Mantener el sistema operativo actualizado con Windows Update.
-   - Desactivar programas innecesarios en el inicio desde el Administrador de Tareas.
+   - Ejecuta `sfc /scannow` para verificar y reparar archivos dañados del sistema operativo.
+   - Usa `chkdsk /f /r` para revisar errores en el disco duro y reparar sectores defectuosos.
+   - En el Administrador de Tareas, desactiva programas innecesarios en el inicio para mejorar la velocidad del arranque.
 
-3. **Herramientas adicionales:**
-   - **CrystalDiskInfo:** Diagnosticar discos duros.
-   - **Spybot - Search & Destroy:** Escanear y eliminar malware.
-   - Programas de recuperación de datos básicos en caso de fallos graves.
+3. **Programas útiles:**
+   - **Ninite:** Instala aplicaciones esenciales rápidamente.
+   - **CrystalDiskInfo:** Diagnostica el estado del disco duro.
+   - **Spybot - Search & Destroy:** Protege contra malware.
+   - **CCleaner:** Elimina archivos temporales y optimiza el registro (úsalo con precaución).
+
+4. **Actualizaciones y drivers:**
+   - Mantén el sistema operativo y los drivers actualizados para evitar problemas de compatibilidad.
+   - Descarga drivers directamente desde el sitio oficial del fabricante.
 
 ---
 
 ## Reflexión Final
 
-Un mantenimiento integral del PC, tanto a nivel de hardware como de software, es esencial para garantizar el 
-correcto funcionamiento del equipo y prolongar su vida útil. Al seguir estos pasos, no solo se asegura 
-un rendimiento óptimo, sino que también se evitan problemas futuros que podrían ser costosos y complicados.
-
+Un mantenimiento regular de hardware y software asegura un rendimiento óptimo y prolonga la vida útil del PC. Es importante combinar ambas tareas para evitar problemas futuros y garantizar que el equipo esté siempre en condiciones óptimas.
